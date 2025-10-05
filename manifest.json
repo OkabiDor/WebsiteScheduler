@@ -1,0 +1,21 @@
+{
+    "name": "Open Websites Auto",
+    "version": "1.0.0",
+    "description": "Opens websites on specific times during the day",
+    "manifest_version": 3,
+    "author": "Dor Okabi",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Open Websites Auto"
+    },
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "permissions":[
+        "storage",
+        "notifications",
+        "tabs",
+        "background"
+    ]
+}

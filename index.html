@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1> Open Websites Extension</h1>
+        <ul>
+            <li id="Websites"></li>
+        </ul>
+        <form name="addWebsite" id="addWebsite">
+            <label for="websiteURL">Website URL:</label>
+            <input type="url" id="websiteURL" placeholder="Website URL" required>
+            <label for="websiteTime" style="margin-left:8px;"> Time: </label>
+            <input type="time" id="websiteTime" placeholder="Time of day" required>
+            <label for="isReaccuring" style="margin-left:8px;"> Reaccuring: </label>
+            <input type="checkbox" id="isReaccuring">
+            <label for="websiteDay" style="margin-left:8px;"> Day: </label>
+            <input type="date" id="websiteDay" placeholder="Day of the week" required>
+            <button type="button" id="addWebsiteButton">Add Website</button>
+        </form>
+    </div>
+    
+</body>
+<script src="background.js"></script>
+<script src="script.js"></script>
+</html>
